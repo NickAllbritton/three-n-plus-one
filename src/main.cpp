@@ -22,6 +22,8 @@ bool loop(int n)
 	if(n == 1)
 	{
 		std::cout << 1 << std::endl;
+		std::cout << "loop:" << std::endl;
+		// TODO: print contents of loop using for loop or while loop(?) or recursion
 		return true;
 	}
 	else return false;
@@ -57,6 +59,7 @@ Error eval_num(int c, int n)
 		return COUNT_EXCEDED; 
 	else
 	{
+		c++; // increase counter before recursive call
 		// TODO: print to file instead of console
 		std::cout << n << "\n";
 		if(n % 2 == 0) // if n is even
