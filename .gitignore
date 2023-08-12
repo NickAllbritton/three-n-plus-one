@@ -1,0 +1,4 @@
+#basic gitignore
+
+compile.sh
+bin/*
